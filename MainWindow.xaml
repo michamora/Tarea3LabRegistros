@@ -10,11 +10,11 @@
 
         <StackPanel> 
             <Menu> 
-                <MenuItem Header="Registro Carreras" >
+                <MenuItem Header="Registro Carreras" Background = "#FF98FB98">
                     <MenuItem Header="📝Carreras" x:Name="rCarreras" Click ="RegistroCarrerasMenuItem_Click" /> 
                 </MenuItem>
 
-                <MenuItem Header="Registro Estudiantes" >
+                <MenuItem Header="Registro Estudiantes" Background = "#FFADD8E6" >
                     <MenuItem Header="🧑🏻Estudiantes" x:Name="rEstudiantes" Click ="RegistroEstudiantesMenuItem_Click" />  
                 </MenuItem>
             </Menu>

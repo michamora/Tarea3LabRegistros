@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tarea3LabRegistros.UI.Registro2"
         mc:Ignorable="d"
-        Title="Registro de Estudiantes" Height="400" Width="300">
+        Title="Registro de Estudiantes" Background = "#FFFFFAFA" Height="400" Width="350">
     <Grid>
 
         <StackPanel Orientation="Vertical" Margin="10"> 
@@ -16,7 +16,7 @@
 
                 <StackPanel Orientation="Horizontal">
                     <TextBox Text="{Binding EstudianteId}" Width="50" />
-                    <Button Content="🔎 Buscar" Click="BuscarButton_Click" /> 
+                    <Button Content="🔎 Buscar" Background ="#FFFFE4E1" Click="BuscarButton_Click" /> 
                 </StackPanel>
             </StackPanel>
 
@@ -31,14 +31,14 @@
                 <Label Content="Carrera ID:"/>
                 <ComboBox x:Name="CarreraIdComboBox" Width="200">
                     <ComboBox.Items> 
-                        <ComboBoxItem Content="" />
-                        <ComboBoxItem Content="Contabilidad" />
-                        <ComboBoxItem Content="Diseño Grafico" />
-                        <ComboBoxItem Content="Ingeniería Civil" />
-                        <ComboBoxItem Content="Ingeniería Financiera" />
-                        <ComboBoxItem Content="Medicina" />
-                        <ComboBoxItem Content="Odontología" />
-                        <ComboBoxItem Content="Ciencias Sociales" />
+                        
+                        <ComboBoxItem Content="Contabilidad" Background ="#FFFFE4C4"/>
+                        <ComboBoxItem Content="Diseño Grafico" Foreground ="#FFF8F8FF" Background ="#FFFF0000"/>
+                        <ComboBoxItem Content="Ingeniería Civil" Background ="#FF98FB98" />
+                        <ComboBoxItem Content="Ingeniería Financiera" Background ="#FFEEE8AA"/>
+                        <ComboBoxItem Content="Medicina" Background ="#FFADD8E6"/>
+                        <ComboBoxItem Content="Odontología" Background ="#FFD3D3D3" />
+                        <ComboBoxItem Content="Ciencias Sociales" Background ="#FFFFE4B5"/>
 
                         
                     </ComboBox.Items>
@@ -55,10 +55,10 @@
                         HorizontalAlignment="Center" >
                 
                 
-                <Button Content="📥 Guardar" Click="GuardarButton_Click" />
-                <Button Content="⚙️ Editar" Click="EditarButton_Click"/>
-                <Button Content="❌ Eliminar" Click="EliminarButton_Click"/>
-                <Button Content="✅ Validar" Click="ValidarButton_Click"/>
+                <Button Content="📥 Guardar"  Background ="#FFFFE4B5" Click="GuardarButton_Click" />
+                <Button Content="⚙️ Editar"  Background ="#FFFFE4B5" Click="EditarButton_Click"/>
+                <Button Content="❌ Eliminar"  Background ="#FFFFE4B5" Click="EliminarButton_Click"/>
+                <Button Content="✅ Validar"  Background ="#FFFFE4B5" Click="ValidarButton_Click"/>
             </StackPanel>
 
         </StackPanel>
